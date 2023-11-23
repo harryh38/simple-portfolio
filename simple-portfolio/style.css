@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+/* Header */
+.main-header {
+  display: flex;
+  background-color: grey;
+  width: 100%;
+}
+
+
+
+
+
+/* Nav */
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav{
+  background-color: grey;
+}
+
+.nav-logo p{
+background-color: lightblue;
+margin-left: -92%;
+padding-left: 83%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+font-weight: 700;
+}
+
+
+
+ul{
+  display: flex;
+  list-style-type: none;
+  
+}
+
+ul li a{
+  color: lightskyblue;
+  text-decoration: underline;
+  margin-right: 30px;
+  font-weight: bold;
+  padding: 50px;
+
+}
+
+
+/* Image Banner */
+.image-banner img {
+
+display: none;
+}
+
+.image-banner {
+  position: relative;
+}
+
+
+.first-h2 {
+   position: absolute;
+    right: 0%;
+    bottom: 10px;
+    background-color: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+/* RESPONSIVE SECTION I-PAD */
+
+@media only screen and (min-width:768px) {
+  .image-banner img {
+  display: block;
+  width: 100%;
+  padding-bottom: 30px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .info-section{
+    padding: 20px 0px 0px;
+     }
+  
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-right: 30px;
+ 
+}
+
+/* RESPONSIVE SECTION WEBPAGE */
+
+@media only screen and (min-width: 1000px){
+
+
+
+.container{
+  width: 1000px;
+  
+}
+
+.image-banner img {
+  width: 100%;
+  height: 200px;
+}
+
+.info-section{
+  padding: 20px 0px 0px;
+   }
+  }
+
+
+.projects {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px;
+padding-right: 30px;
+
+}
+
+
+
+/* Project + About me Section */
+.about-me {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+
+.border-right{
+  border-right: 3px solid black;
+
+}
+
+ .info-section{
+
+padding: 0px 30px 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 16px;
+color: black;
+line-height: 24px;
+
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding-top: 100px;
+  margin-left: 50px;
+  
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-left: 50px;
+ 
+}
+
+.projects a{
+  color: black;
+
+}
+
+.project1{
+  width: 100%;
+}
+
+.project1 h3{
+  background-color: lightblue;
+  display: inline-block; 
+  width: auto;
+}
+
+.project2{
+  width: 100%;
+ 
+}
+
+.project2 h3{
+  background-color: lightblue;
+  display: inline-block; 
+  width: auto; 
+  
+}
+
+.project3{
+  width: 100%;
+}
+.project3 h3{
+  background-color: lightblue;
+  display: inline-block; 
+  width: auto;
+}
+
+.project4{
+  width: 100%;
+}
+.project4 h3{
+  background-color: lightblue;
+  display: inline-block; 
+  width: auto;
+}
+
+span{
+  font-size: 15px;
+}
+
+/* Project Images */
+
+.project1{
+  background-image: url(../images/nikeNew.jpg);
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px; 
+  transition: transform 0.3s ease;
+}
+
+.project1:hover {
+  transform: scale(1.1);
+}
+
+.project2{
+  background-image: url(../images/addyNew.jpg);
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  transition: transform 0.3s ease;
+
+}
+
+.project2:hover {
+  transform: scale(1.1);
+}
+
+.project3{
+  background-image: url(../images/reebokNew.jpg);
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  transition: transform 0.3s ease;
+
+}
+
+.project3:hover {
+  transform: scale(1.1);
+}
+
+.project4{
+
+  background-image: url(../images/uaaNew.jpg);
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  transition: transform 0.3s ease;
+
+}
+
+.project4:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Footer Section */
+
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  padding-top: 100px;
+  margin-left: 50px;
+}
+
+.footer-contact{
+  margin-left: -25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+  .fa-brands {
+    font-size: 30px; 
+    margin: 0 10px;
+    padding-left: 50px;
+  }
+
+ .footernav ul{
+  display: grid;
+  gap: 20px;
+  padding-top: 20px;
+  text-decoration: underline;
+  display: inline-flex;
+  padding-left: 50px;
+} 
+
+
+.footerBottom p{
+  display: flex;
+  justify-content: center; 
+  padding-top: 20px;
+}
